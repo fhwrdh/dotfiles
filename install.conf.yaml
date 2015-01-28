@@ -1,10 +1,6 @@
--
-    link:
-        ~/.tmux.conf: tmux.conf
-
--
-    shell:
-      -
-        - "git submodule update --init --recursive --remote"
-        - "Installing/updating submodules"
+- clean: ['~']
+- link:
+    ~/.tmux.conf: tmux.conf
+- shell:
+    - [git submodule update --init --recursive --remote, Installing submodules]
 
