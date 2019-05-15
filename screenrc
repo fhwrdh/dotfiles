@@ -1,0 +1,46 @@
+#
+# Stolen from here:
+# https://gist.github.com/ChrisWills/1337178
+# https://www.kilobitspersecond.com/2014/02/10/understanding-gnu-screens-hardstatus-strings/
+# https://serverfault.com/questions/3740/what-are-useful-screenrc-settings
+# 
+startup_message off
+escape ``
+vbell off
+altscreen on
+
+multiuser on
+addacl jacobi
+
+screen -t logs      0
+screen -t mw        1
+screen -t login     2
+screen -t acct-cust 3
+screen -t tools     4
+
+select 1
+
+# Allow bold colors - necessary for some reason
+attrcolor b ".I"
+
+# Tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+# Enables use of shift-PgUp and shift-PgDn
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+# Erase background with current bg color
+defbce "on"
+
+# Enable 256 color term
+term xterm-256color
+
+# Cache 30000 lines for scroll back
+defscrollback 30000
+
+# caption always "%?%F%{= Kk}%:%{=u kR}%?  %h %-024=%{+b} %C%a %D %d %M %Y%{= db}"
+
+hardstatus alwayslastline 
+# Very nice tabbed colored hardstatus line
+hardstatus string '%{= Kd} %{= Kd}%-w%{= Kg}[%{= KW}%n %t%{= Kg}]%{= Kd}%+w %-= %{KG} %H%{KW}|%Y.%m.%d %c%{-}'
+
