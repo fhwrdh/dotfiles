@@ -10,13 +10,19 @@ vbell off
 altscreen on
 
 multiuser on
+addacl bacon
 addacl jacobi
+addacl kalamity
+addacl kali
+addacl kurt
+addacl ray
+addacl zed
 
-screen -t logs      0
-screen -t mw        1
-screen -t login     2
-screen -t acct-cust 3
-screen -t tools     4
+# screen -t logs      0 
+# screen -t mw        1
+# screen -t login     2
+# screen -t acct-cust 3
+# screen -t tools     4
 
 select 1
 
@@ -42,5 +48,5 @@ defscrollback 30000
 
 hardstatus alwayslastline 
 # Very nice tabbed colored hardstatus line
-hardstatus string '%{= Kd} %{= Kd}%-w%{= Kg}[%{= KW}%n %t%{= Kg}]%{= Kd}%+w %-= %{KG} %H%{KW}|%Y.%m.%d %c%{-}'
-
+hardstatus string '%{= Kd} %-w%{= Kg}[%{= KW}%n %t %f%? (%u) %?%{= Kg}]%{= Kd}%+w %-= %{KG} %H%{KW} | %Y.%m.%d %c%{-} '
+# hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
