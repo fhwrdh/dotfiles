@@ -18,6 +18,7 @@ brew install coreutils
 # ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install `wget` with IRI support.
+brew install ag
 brew install autojump
 brew install bat
 brew install fzf
