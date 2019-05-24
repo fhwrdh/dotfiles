@@ -9,4 +9,7 @@ alias gaa="git add ."
 alias ggg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gd="git diff"
 alias grv="git remote -v"
-alias gcam="git commit -am"
+alias gcam="git commit -am "
+alias gcm="git commit -m "
+alias grhh="git reset --hard HEAD"
+
