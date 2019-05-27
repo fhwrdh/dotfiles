@@ -1,7 +1,7 @@
 alias ll='ls -l'
 alias la='ls -Fal'
 alias l='ls -CF'
-# alias p1="echo \"${PATH//:/$'\n'}\"" 
+alias path='echo $PATH | tr -s ":" "\n"'
 
 alias v="vim"
 alias gs="git status"
