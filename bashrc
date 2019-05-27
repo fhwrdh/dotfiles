@@ -131,8 +131,10 @@ fi
 [[ -s "/home/stout/.gvm/scripts/gvm" ]] && source "/home/stout/.gvm/scripts/gvm"
 
 export GOPATH=/var/tmp/$(whoami)/gocode
+export GOBIN=$GOPATH/bin
 export HOST=$(hostname -f)
 export PATH=$PATH:$GOPATH/bin:~/bin
+export EDITOR=vim
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
