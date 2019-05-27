@@ -13,3 +13,8 @@ alias gcam="git commit -am "
 alias gcm="git commit -m "
 alias grhh="git reset --hard HEAD"
 
+alias nrt="npm run test"
+alias nrto="CI=true npm run test"
+alias nrtc="npm run test -- --coverage"
+alias ecom="screen -x ecom"
+
