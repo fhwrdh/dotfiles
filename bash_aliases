@@ -19,3 +19,4 @@ alias nrto="CI=true npm run test"
 alias nrtc="npm run test -- --coverage"
 alias ecom="screen -x ecom"
 
+alias t="todo.sh"

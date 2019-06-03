@@ -40,6 +40,7 @@ brew install ripgrep
 brew install task
 brew install tig
 brew install tmux
+brew install todo-txt
 brew install trash
 brew install tree
 brew install watch
