@@ -18,6 +18,7 @@ alias nrl="npm run lint"
 alias nrt="npm run test"
 alias nrto="CI=true npm run test"
 alias nrtc="npm run test -- --coverage"
-alias ecom="screen -x ecom"
+alias fmln="rm -rf node_modules && npm i"
+alias fmly="rm -rf node_modules && yarn"
 
 alias t="todo.sh"
