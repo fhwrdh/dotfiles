@@ -129,7 +129,8 @@ fi
 export GOPATH=/var/tmp/$(whoami)/gocode
 export GOBIN=$GOPATH/bin
 export HOST=$(hostname -f)
-export PATH=$PATH:$GOPATH/bin:~/bin
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:~/bin
 export EDITOR=vim
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
