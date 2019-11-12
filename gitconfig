@@ -7,8 +7,6 @@
 [core]
     quotepath = false
     editor = vim
-    # npm i -g diff-so-fancy
-    ; pager = diff-highlight | diff-so-fancy | less -r
 [color]
     ui = auto
 [color "diff"]
@@ -32,8 +30,7 @@
     di = diff
     dc = diff --cached
     dh1 = diff HEAD~1 -b
-    amend = !git commit -a --amend --no-edit
-    dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX  --pattern '^(Date|added|deleted|modified): '; }; f"
+    amend = !git commit --amend --no-edit
     up = pull --rebase --autostash
     # Fancy logging.
     #   h = head
@@ -53,5 +50,3 @@
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     # show all commit since last tag
     since = !git log `git describe --tags --abbrev=0`..HEAD
-    mw-report = !git log --decorate --no-merges --stat -- cjo/member-web
-
