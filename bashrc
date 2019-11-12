@@ -135,7 +135,9 @@ export EDITOR=vim
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-[[ -s /home/stout/.autojump/etc/profile.d/autojump.sh ]] && source /home/stout/.autojump/etc/profile.d/autojump.sh
+[[ -s "$HOME/.autojump/etc/profile.d/autojump.sh" ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
+[[ -s "$HOME/bin/z.sh" ]] && source $HOME/bin/z.sh
+
 
 
 export NVM_DIR="$HOME/.nvm"
