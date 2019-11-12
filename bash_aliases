@@ -1,4 +1,5 @@
 alias ll='ls -l'
+alias lt='ls --tree'
 alias la='ls -Fal'
 alias l='ls -CF'
 alias path='echo $PATH | tr -s ":" "\n"'
