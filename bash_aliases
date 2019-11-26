@@ -6,6 +6,8 @@ alias path='echo $PATH | tr -s ":" "\n"'
 
 alias v="vim"
 alias vv="/usr/local/bin/vim"
+alias n="nvim"
+
 
 alias g="git"
 alias ga="git add "
