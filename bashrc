@@ -149,4 +149,4 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
-
+eval "$(fasd --init auto)"
