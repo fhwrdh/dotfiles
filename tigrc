@@ -1,0 +1,8 @@
+set git-colors = no     # Do not read Git's color settings.
+
+# Override the default terminal colors to white on black.
+color   default         255         0
+color   cursor          default     236
+color   status          default     238
+
+
