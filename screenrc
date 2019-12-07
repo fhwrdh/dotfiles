@@ -44,9 +44,6 @@ term xterm-256color
 # Cache 30000 lines for scroll back
 defscrollback 30000
 
-# caption always "%?%F%{= Kk}%:%{=u kR}%?  %h %-024=%{+b} %C%a %D %d %M %Y%{= db}"
-
-hardstatus alwayslastline 
 # Very nice tabbed colored hardstatus line
-hardstatus string '%{= Kd} %-w%{= Kg}[%{= KW}%n %t %f%? (%u) %?%{= Kg}]%{= Kd}%+w %-= %{KG} %H%{KW} | %Y.%m.%d %c%{-} '
-# hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+hardstatus alwayslastline '%{= Kd} %-w%{= Kg}[%{= KW}%n %t %f%? (%u) %?%{= Kg}]%{= Kd}%+w %-= %{KG} %H%{KW}'
+# hardstatus alwayslistline '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
