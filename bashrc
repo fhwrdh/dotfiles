@@ -18,8 +18,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=10000
-HISTFILESIZE=2000
+HISTSIZE=20000
+HISTFILESIZE=4000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -132,6 +132,7 @@ export HOST=$(hostname -f)
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/bin
 export EDITOR=vim
+export PROMPT_COMMAND='history -a'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
