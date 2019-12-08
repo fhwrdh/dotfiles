@@ -4,11 +4,11 @@
 #
 FH_GREEN=28
 FH_RED=88
-FH_GREY=8
+FH_GREY=235
 FH_BLUE=27
 FH_YELLOW=112
 
-PROMPT='%1(j.%F{$FH_RED}_ %f.)%F{$FH_GREEN}%~%f $(git_super_status)
+PROMPT='%F{$FH_GREY}%m%f %1(j.%F{$FH_RED}_ %f.)%F{$FH_GREEN}%~%f $(git_super_status)
 %F{$FH_BLUE}%(!.#.ⵙ)%f '
 # ⵙ  ⵂ ䷀
 RPROMPT=''
