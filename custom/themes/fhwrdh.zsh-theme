@@ -2,7 +2,7 @@
 #
 # requires git-prompt plugin
 #
-FH_GREEN=28
+FH_GREEN=34
 FH_RED=88
 FH_GREY=240
 FH_BLUE=27
