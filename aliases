@@ -27,6 +27,7 @@ alias gs="git status"
 
 alias pr="hub pull-request"
 
+alias nrb="npm run build"
 alias nrc="npm run coverage"
 alias nrl="npm run lint"
 alias nrt="npm run test"
