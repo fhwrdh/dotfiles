@@ -50,3 +50,4 @@
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     # show all commit since last tag
     since = !git log `git describe --tags --abbrev=0`..HEAD
+    unstage= !git reset --soft
