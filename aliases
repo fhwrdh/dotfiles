@@ -40,6 +40,7 @@ alias nrc="npm run coverage"
 alias nrl="npm run lint"
 alias nrt="npm run test"
 alias nrts="npm run test:server"
+alias nrtsf="npm run test:server:fit"
 alias nrcs="npm run coverage:server"
 alias nrto="CI=true npm run test"
 alias nrtc="npm run test -- --coverage"
@@ -50,6 +51,6 @@ alias fmly="rm -rf node_modules && yarn"
 alias t="todo.sh"
 
 alias tokenGuts="echo $token | awk -F\".\" '{print \$2}' |  base64 -d"
+
 alias s="shipr"
 alias ss="shipr list -u stout"
-

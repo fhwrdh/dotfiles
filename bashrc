@@ -69,8 +69,7 @@ COLOR_BLUE="\033[0;34m"
 COLOR_WHITE="\033[0;37m"
 COLOR_RESET="\033[0m"
 
-# https://github.com/djl/vcprompt 
-
+# https://github.com/djl/vcprompt
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] [$(vcprompt --format-git %b%m%a%u)]\nBASH $ '
 else
@@ -129,7 +128,7 @@ fi
 export GOPATH=/var/tmp/$(whoami)/gocode
 export GOBIN=$GOPATH/bin
 export HOST=$(hostname -f)
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:~/bin
 export PATH=$PATH:~/bin
 export EDITOR=vim
 export PROMPT_COMMAND='history -a'
