@@ -137,6 +137,8 @@ export PROMPT_COMMAND='history -a'
 
 [[ -s "$HOME/.autojump/etc/profile.d/autojump.sh" ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
 [[ -s "$HOME/bin/z.sh" ]] && source $HOME/bin/z.sh
+[ -f ~/src/z/z.sh ] && source ~/src/z/z.sh
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -146,5 +148,7 @@ export NVM_DIR="$HOME/.nvm"
 if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
+export PATH=$PATH:~/src/stout.tools/bin
+
 
 set -o vi
