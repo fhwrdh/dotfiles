@@ -2,3 +2,4 @@ tags
 custom/plugins/zsh-autosuggestions
 custom/plugins/zsh-syntax-highlighting
 *.log
+.claude/
