@@ -1,5 +1,8 @@
 [user]
-    name = Franklin Henderson
+	name = Franklin Henderson
+	email = fhwrdh@fhwrdh.net
+[includeIf "gitdir:~/work/"]
+	path = ~/.gitconfig-work
 [push]
     default = simple
 [url "https://"]
@@ -51,3 +54,8 @@
     # show all commit since last tag
     since = !git log `git describe --tags --abbrev=0`..HEAD
     unstage= !git reset --soft
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

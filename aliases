@@ -5,9 +5,7 @@ alias l='ls -CF'
 alias path='echo $PATH | tr -s ":" "\n"'
 
 alias v="vim"
-alias vv="/usr/local/bin/vim"
 alias n="nvim"
-
 
 alias g="git"
 alias ga="git add "
@@ -22,14 +20,9 @@ alias gdc="git diff --cached | view -"
 alias gdd="git diff | view -"
 alias ggg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gls="git log --stat"
-alias gmm="git merge master"
 alias gpp="git push"
-alias gpnv="git push --no-verify"
-alias grhh="git reset --hard HEAD"
 alias grv="git remote -v"
 alias gs="git status -sb"
-
-alias pr="hub pull-request"
 
 alias nrb="npm run build"
 alias nrc="npm run coverage"
@@ -38,8 +31,3 @@ alias nrt="npm run test"
 alias nrto="CI=true npm run test"
 alias nrtc="npm run test -- --coverage"
 alias fmln="rm -rf node_modules && npm i"
-alias fmly="rm -rf node_modules && yarn"
-
-alias t="todo.sh"
-
-alias tokenGuts="echo $token | awk -F\".\" '{print \$2}' |  base64 -d"
