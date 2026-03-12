@@ -8,7 +8,7 @@
     ~/.editorconfig: editorconfig
     ~/.tigrc: tigrc
     ~/.config/nvim: nvim
-    ~/.config/ghostty/config: ghostty/config
+    ~/Library/Application Support/com.mitchellh.ghostty/config: ghostty/config
 
 - shell:
     - [git submodule update --init --recursive --remote, Installing submodules]
