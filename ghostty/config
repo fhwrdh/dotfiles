@@ -1,0 +1,16 @@
+background = 111111
+split-divider-color = #ffff00
+unfocused-split-opacity = 0.6
+font-family = Terminess Nerd Font Mono
+window-padding-x = 2
+
+# Terminal type - use ghostty's native terminfo for proper tmux integration
+term = xterm-ghostty
+
+# Mouse handling - let tmux own mouse events cleanly
+mouse-shift-capture = false
+
+keybind = super+shift+arrow_left=goto_split:left
+keybind = super+shift+arrow_right=goto_split:right
+keybind = super+shift+arrow_up=goto_split:up
+keybind = super+shift+arrow_down=goto_split:down

@@ -1,6 +1,14 @@
 - clean: ['~']
+
 - link:
+    ~/.zshrc: zshrc
+    ~/.aliases: aliases
     ~/.tmux.conf: tmux.conf
+    ~/.gitconfig: gitconfig
+    ~/.editorconfig: editorconfig
+    ~/.tigrc: tigrc
+    ~/.config/nvim: nvim
+    ~/Library/Application Support/com.mitchellh.ghostty/config: ghostty/config
+
 - shell:
     - [git submodule update --init --recursive --remote, Installing submodules]
-
