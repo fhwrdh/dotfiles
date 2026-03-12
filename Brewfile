@@ -1,9 +1,6 @@
 # Brewfile for new macOS setup
 # Install with: brew bundle --file=Brewfile
 
-# === Taps ===
-tap "homebrew/cask-fonts"
-
 # === Languages & Runtimes ===
 brew "go"
 brew "node"
