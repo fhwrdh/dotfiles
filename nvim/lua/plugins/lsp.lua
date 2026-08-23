@@ -54,8 +54,6 @@ return {
         pyright = {},
         -- Rust
         rust_analyzer = {},
-        -- Go
-        gopls = {},
         -- C/C++
         clangd = {},
         -- Lua

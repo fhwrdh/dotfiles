@@ -1,11 +1,12 @@
-alias ll='ls -l'
-alias lt='ls --tree'
-alias la='ls -Fal'
-alias l='ls -CF'
+alias ll='eza -l --icons --group-directories-first'
+alias lt='eza --tree --icons'
+alias la='eza -la --icons --group-directories-first'
+alias l='eza --icons --group-directories-first'
 alias path='echo $PATH | tr -s ":" "\n"'
 
 alias v="vim"
 alias n="nvim"
+alias nai="NVIM_AI=1 nvim"   # nvim with Claude Code enabled
 
 alias g="git"
 alias ga="git add "

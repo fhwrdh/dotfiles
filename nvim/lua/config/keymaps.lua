@@ -1,5 +1,8 @@
 local keymap = vim.keymap
 
+-- Exit insert mode with jj
+keymap.set("i", "jj", "<Esc>", { desc = "Exit insert mode" })
+
 -- Better window navigation
 keymap.set("n", "<C-h>", "<C-w>h", { desc = "Go to left window" })
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go to lower window" })
@@ -39,8 +42,8 @@ keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up and center" })
 keymap.set("n", "n", "nzzzv", { desc = "Next search result" })
 keymap.set("n", "N", "Nzzzv", { desc = "Previous search result" })
 
--- Quick save
-keymap.set("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
+-- Quick save (all buffers)
+keymap.set("n", "<leader>w", "<cmd>wa<CR>", { desc = "Save all buffers" })
 
 -- Quick quit
 keymap.set("n", "<leader>q", "<cmd>q<CR>", { desc = "Quit" })

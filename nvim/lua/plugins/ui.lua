@@ -4,9 +4,37 @@ return {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
-    opts = {},
-    config = function()
-      vim.cmd.colorscheme("tokyonight-moon")
+    opts = {
+      style = "night",
+      styles = {
+        comments = { italic = true },
+        keywords = { italic = false },
+      },
+      -- Near-monochrome dark: black, gray, one blue accent. No teal/cyan/green/purple.
+      on_colors = function(colors)
+        local gray = "#9aa3b8"
+        local blue = "#7aa2f7"
+        colors.bg = "#16161e"      -- near black
+        colors.bg_dark = "#101014"
+        colors.fg = "#b0b6c8"      -- gray foreground
+        colors.comment = "#565f89"
+        -- collapse the accent palette
+        colors.green = gray
+        colors.teal = gray
+        colors.cyan = blue
+        colors.magenta = gray
+        colors.magenta2 = gray
+        colors.purple = blue
+        colors.orange = gray
+        colors.yellow = gray
+        colors.blue = blue
+        colors.blue1 = blue
+        colors.blue5 = blue
+      end,
+    },
+    config = function(_, opts)
+      require("tokyonight").setup(opts)
+      vim.cmd.colorscheme("tokyonight-night")
     end,
   },
 

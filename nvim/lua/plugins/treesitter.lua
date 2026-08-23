@@ -2,13 +2,15 @@ return {
   -- Treesitter for better syntax highlighting
   {
     "nvim-treesitter/nvim-treesitter",
+    -- Pin to the stable master branch; the main branch dropped the
+    -- nvim-treesitter.configs setup API this config relies on.
+    branch = "master",
     build = ":TSUpdate",
     opts = {
       ensure_installed = {
         "bash",
         "c",
         "cpp",
-        "go",
         "lua",
         "python",
         "rust",
